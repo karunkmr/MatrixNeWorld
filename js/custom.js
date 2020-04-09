@@ -43,7 +43,9 @@ $(document).ready(function() {
             $('.navbar-collapse').toggleClass('in');
         }
     });
-    $('.markets-featured-desc').css('height', $('.menu-nav>li.active>ul').height() + 30 + 'px');
+    if ($(window).width() > "991") {
+        $('.markets-featured-desc').css('height', $('.menu-nav>li.active>ul').height() + 30 + 'px');
+    }
 
     function bannerHeight() {
         // if ($(window).width() < 1366) {

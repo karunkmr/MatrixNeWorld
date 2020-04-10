@@ -1407,6 +1407,7 @@ a.r {
 .right_sidebar a {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .7);
 }
 
 .right_sidebar h6 {
@@ -1702,7 +1703,7 @@ a.r {
         font-size: 48px;
     }
     .banner .banner-desc {
-        max-width: none;
+        max-width: 1176px;
     }
     .banner-desc p a {
         font-size: 18px;
@@ -1955,7 +1956,7 @@ a.r {
         font-size: 18px;
     }
     .banner-desc p {
-        /* font-size: 18px; */
+        font-size: 34px;
         /* margin-top: 5px; */
     }
     .matrix {
@@ -2599,7 +2600,7 @@ a.r {
         width: 33.33%;
     }
     .banner-desc p {
-        font-size: 18px;
+        font-size: 16px;
     }
     .menu-nav>li:nth-child(1) {
         order: 1;
@@ -2676,7 +2677,7 @@ a.r {
     }
     /*banner*/
     .banner {
-        margin-top: 63px;
+        /* margin-top: 63px; */
         position: relative;
     }
     .banner .banner-desc {

@@ -67,31 +67,41 @@ $(document).ready(function() {
         items: 1,
         singleItem: true,
         loop: true,
+        // animateIn: 'zoomIn',
         animateOut: 'fadeOut',
         // onChanged: function(e) {
         //     console.log(e.item.active);
         // }
     });
+    $('#slides').slideshow({
+        randomize: false, // Randomize the play order of the slides.
+        slideDuration: 5000, // Duration of each induvidual slide.
+        fadeDuration: 1000, // Duration of the fading transition. Should be shorter than slideDuration.
+        animate: true, // Turn css animations on or off.
+        pauseOnTabBlur: false, // Pause the slideshow when the tab is out of focus. This prevents glitches with setTimeout().
+        enableLog: false // Enable log messages to the console. Useful for debugging.
+    });
     $("#owl-carousel").on('changed.owl.carousel', function(e) {
         setTimeout(function() {
-            var owl_item = $('.owl-carousel .owl-item.active .item').attr('data-class');
+            // var owl_item = $('.owl-carousel .owl-item.active .item').attr('data-class');
+            var slideItem = $('#slideshow .slide').attr('data-class');
             $('.menu-nav li > a').removeClass('active');
-            if (owl_item == 'transportation') {
+            if (slideItem == 'transportation') {
                 $('.menu-nav li > a[data-class="transportation"]').addClass('active');
             }
-            if (owl_item == 'environment') {
+            if (slideItem == 'environment') {
                 $('.menu-nav li > a[data-class="environment"]').addClass('active');
             }
-            if (owl_item == 'resiliency-water') {
+            if (slideItem == 'resiliency-water') {
                 $('.menu-nav li > a[data-class="resiliency-water"]').addClass('active');
             }
-            if (owl_item == 'energy') {
+            if (slideItem == 'energy') {
                 $('.menu-nav li > a[data-class="energy"]').addClass('active');
             }
-            if (owl_item == 'cities-communities') {
+            if (slideItem == 'cities-communities') {
                 $('.menu-nav li > a[data-class="cities-communities"]').addClass('active');
             }
-            if (owl_item == 'industry') {
+            if (slideItem == 'industry') {
                 $('.menu-nav li > a[data-class="industry"]').addClass('active');
             }
         }, 300);

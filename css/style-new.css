@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap"';
+
 /*Common*/
 
 body,
@@ -1117,17 +1119,12 @@ nav.navbar.navbar-default {
 .menu-nav {
     background: rgba(0, 0, 0, 0.45);
     padding: 0;
-    /* position: absolute;
-    top: 63px;
-    left: 400px; */
     height: 88px;
     max-width: 1176px;
     margin: auto;
-    /* margin-left: 400px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* width: 100%; */
 }
 
 .menu-nav li {
@@ -1144,7 +1141,6 @@ nav.navbar.navbar-default {
     letter-spacing: 1px;
     padding: 20px 15px 10px;
     display: flex;
-    /* align-items: center; */
     height: 100%;
     width: 196px;
     transition: 0.3s all linear;
@@ -1162,7 +1158,7 @@ nav.navbar.navbar-default {
     top: 100%;
     left: 0px;
     /* background: rgba(112, 171, 55, 0.85); */
-    background: rgb(112, 171, 55);
+    background: rgba(147, 196, 58, 0.95);
     width: 100%;
     /* display: none; */
     visibility: hidden;
@@ -1180,7 +1176,7 @@ nav.navbar.navbar-default {
 }
 
 .submenu-nav:hover {
-    background: rgb(139, 189, 91);
+    background: rgba(169, 216, 84, 0.95);
 }
 
 .submenu-nav>li>a {
@@ -1373,7 +1369,7 @@ a.see-all:hover {
 .p_11 {
     margin: 0;
     padding: 0;
-    color: rgba(0, 0, 0, .75);
+    color: rgba(0, 0, 0, .6);
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 25px;
@@ -1608,7 +1604,7 @@ a.r {
 
 .related-services .related-img p {
     font-size: 16px;
-    color: #000;
+    color: rgba(0, 0, 0, .75);
     transition: 0.3s all linear;
     line-height: normal;
     margin-top: -3px;
@@ -1652,6 +1648,8 @@ a.r {
 .markets-featured-desc .column-3 {
     width: 588px;
     padding: 0 15px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .markets-featured-desc .column-4 {
@@ -1684,6 +1682,10 @@ a.r {
 
 .services-img a:hover>span:before {
     opacity: 1;
+}
+
+.pl-0 {
+    padding-left: 0px !important;
 }
 
 
@@ -1869,6 +1871,9 @@ a.r {
     .container-all {
         max-width: none;
         margin: 0px;
+    }
+    .markets-featured-desc {
+        font-size: 20px;
     }
 }
 
@@ -2093,6 +2098,9 @@ a.r {
     /*region page*/
     .region-content {
         min-height: 400px;
+    }
+    .menu-nav li {
+        height: 100%;
     }
 }
 

@@ -1,24 +1,32 @@
 $(document).ready(function() {
     if ($(window).width() >= "2100") {
-        $("a.logo-subtext").css('left', $('.menu-nav').offset().left - 15 + 'px');
+        if ($('.menu-nav').length != '0') {
+            $("a.logo-subtext").css('left', $('.menu-nav').offset().left - 15 + 'px');
+        }
     } else {
         $("a.logo-subtext").removeAttr('style');
     }
     if ($(window).width() >= "1200") {
-        $('.banner .banner-desc').css({
-            left: $('.menu-nav').offset().left + 'px'
-        });
+        if ($('.menu-nav').length != '0') {
+            $('.banner .banner-desc').css({
+                left: $('.menu-nav').offset().left + 'px'
+            });
+        }
     }
     $(window).resize(function() {
         if ($(window).width() >= "2100") {
-            $("a.logo-subtext").css('left', $('.menu-nav').offset().left - 15 + 'px');
+            if ($('.menu-nav').length != '0') {
+                $("a.logo-subtext").css('left', $('.menu-nav').offset().left - 15 + 'px');
+            }
         } else {
             $("a.logo-subtext").removeAttr('style');
         }
         if ($(window).width() >= "1200") {
-            $('.banner .banner-desc').css({
-                left: $('.menu-nav').offset().left + 'px'
-            });
+            if ($('.menu-nav').length != '0') {
+                $('.banner .banner-desc').css({
+                    left: $('.menu-nav').offset().left + 'px'
+                });
+            }
         }
     });
     setTimeout(function() {
@@ -73,14 +81,7 @@ $(document).ready(function() {
         //     console.log(e.item.active);
         // }
     });
-    $('#slides').slideshow({
-        randomize: false, // Randomize the play order of the slides.
-        slideDuration: 5000, // Duration of each induvidual slide.
-        fadeDuration: 1000, // Duration of the fading transition. Should be shorter than slideDuration.
-        animate: true, // Turn css animations on or off.
-        pauseOnTabBlur: false, // Pause the slideshow when the tab is out of focus. This prevents glitches with setTimeout().
-        enableLog: false // Enable log messages to the console. Useful for debugging.
-    });
+
     $("#owl-carousel").on('changed.owl.carousel', function(e) {
         setTimeout(function() {
             // var owl_item = $('.owl-carousel .owl-item.active .item').attr('data-class');

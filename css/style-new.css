@@ -1153,7 +1153,7 @@ nav.navbar.navbar-default {
 }
 
 .menu-nav>li>ul {
-    padding: 15px;
+    padding: 14px;
     position: absolute;
     top: 100%;
     left: 0px;
@@ -1687,6 +1687,10 @@ a.r {
 
 .pl-0 {
     padding-left: 0px !important;
+}
+
+.banner #slideshow .slide {
+    /* display: block !important; */
 }
 
 

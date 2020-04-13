@@ -108,9 +108,9 @@
             } else {
                 slides.find('.' + settings.slideElementClass + ':first').prependTo(slideshow);
                 var slideElement = '#' + settings.slideshowId + ' .' + settings.slideElementClass;
-                $(slideElement + ':first span.animate').addClass('active').css('animation-duration', cssAnimationDuration + 'ms');;
+                $(slideElement + ':first span.animate').addClass('active').css('animation-duration', cssAnimationDuration + 'ms');
                 $(slideElement + ':last').fadeOut(settings.fadeDuration, function() {
-                    $(slideElement + ':last span.animate').removeClass('active').css('animation-duration', '0ms');;
+                    $(slideElement + ':last span.animate').removeClass('active').css('animation-duration', '0ms');
                     $(slideElement + ':last').appendTo(slides);
                     slides.find('.' + settings.slideElementClass).show(0);
                 });

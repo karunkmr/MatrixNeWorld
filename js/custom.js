@@ -13,6 +13,14 @@ $(document).ready(function() {
             });
         }
     }
+
+    $(".menu-nav>li>a").click(function() {
+        //if ($(window).width() > "1024") {
+        var href = $(this).parent("li").find(".submenu-nav a").attr('href');
+        window.location = href;
+        //}
+    });
+
     $(window).resize(function() {
         if ($(window).width() >= "2100") {
             if ($('.menu-nav').length != '0') {

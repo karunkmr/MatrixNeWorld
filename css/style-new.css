@@ -2521,6 +2521,9 @@ a.r {
         padding: 0;
         margin: 0 15px;
     }
+    .markets-featured-desc .column-3 {
+        padding-left: 15px !important;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -2812,6 +2815,13 @@ a.r {
     }
     .container-all {
         padding: 0 5px;
+    }
+    .markets-featured-desc .column-3 {
+        padding-left: 5px !important;
+        padding-right: 5px;
+    }
+    .right-outer {
+        margin: 0 5px
     }
 }
 

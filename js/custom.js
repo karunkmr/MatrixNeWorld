@@ -92,8 +92,8 @@ $(document).ready(function() {
 
     $("#owl-carousel").on('changed.owl.carousel', function(e) {
         setTimeout(function() {
-            // var owl_item = $('.owl-carousel .owl-item.active .item').attr('data-class');
-            var slideItem = $('#slideshow .slide').attr('data-class');
+            var slideItem = $('.owl-carousel .owl-item.active .item').attr('data-class');
+            // var slideItem = $('#slideshow .slide').attr('data-class');
             $('.menu-nav li > a').removeClass('active');
             if (slideItem == 'transportation') {
                 $('.menu-nav li > a[data-class="transportation"]').addClass('active');
